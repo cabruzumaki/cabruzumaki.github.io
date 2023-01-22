@@ -1,0 +1,407 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Manrope', sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: none;
+}
+
+
+.btn-go{
+    display: none;
+}
+
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161616;
+}
+
+.cont-logo{
+    margin: 15px;
+    color: white;
+}
+
+.items{
+    margin: 0 30px ;
+    font-size: 20px;
+    color: white;
+}
+
+.cont-start{
+    display: grid;
+    align-items: center;
+    background-color: #87ceeb;
+    height: calc(100vh - 60px);
+}
+
+
+.cont-des{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+
+
+.me-img-p{
+    border-radius: 50%;
+    background: radial-gradient(#161616 30%, transparent 0%);
+    background-size: 30px 30px;
+    padding: 40px;
+}
+
+
+.me{
+    width: 50%;
+}
+
+.me-title{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0px 0 25px 0;
+}
+
+.about-me{
+    margin: 0px 0 55px 0px;
+    color: white;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.me a{
+    text-align: center;
+    background-color:#ff70a9 ;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.me-des{
+    font-size:50px ;
+    margin: 0;
+}
+
+b{
+  animation: hola 2s infinite ;
+}
+
+.down-go{
+    display: flex;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    bottom: 20px;
+    left: 40%;
+    right: 40%;
+
+
+}
+
+.down-go i{
+
+    color: #ff70a9;
+    font-size: 25px;
+
+}
+
+.go-d{
+
+    text-align: center;
+    margin: 100px auto 0 auto;
+    cursor: pointer;
+
+
+}
+
+
+#skills-box{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: calc(330vh - 60px);
+    background-color: rgb(7, 7, 7);
+    width: 100%;
+}
+
+.title-skills{
+    text-align: center;
+    font-size: 100px;
+    color: white;
+
+}
+
+.des-skills{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.skills-icons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 150px;
+
+}
+
+.skills-icons i{
+    font-size: 250px;
+    margin: 0 50px;
+
+}
+
+.fa-html5{
+    color: orangered;
+}
+
+.fa-css3-alt{
+    color: rgb(0, 140, 255);
+}
+
+.fa-js-square{
+    color: yellow;
+}
+
+
+
+.skills-icons h1{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.project-cont{
+    display: grid;
+    align-items: center;
+    height: calc(100vh - 60px);
+    border-top: 1px solid white;
+    width: 100%;
+}
+
+.skills-icons img{
+    border-radius: 20px;
+    padding: 0px;
+    transition: .5s all;
+    margin: 0 10px;
+    box-shadow: 10px 10px #6e4bf9;
+    border: 2px solid white;
+}
+
+
+
+/*NAV BAR RESPONSIVE*/
+
+@media (max-width:650px){
+
+    body{
+        z-index: -1;
+    }
+
+    .btn-go{
+        display: block;
+        margin: 0 40px 0 0;
+
+    }
+
+    .btn-go button{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 30px;
+    }
+
+    .nav-conten{
+        display: grid;
+        display: none;
+        align-items: center;
+        text-align: center;
+        background-color: #1616;
+        justify-content: center;
+        width: 100vw;
+        height: calc(100vh - 100px);
+        position: absolute;
+        top: 79px;
+        z-index: 100;
+    }
+
+    .nav-conten a{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width:768px){
+    .cont-des{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .down-go{
+        display: none;
+    }
+
+    .me-img{
+        display: none;
+    }
+
+    #skills-box{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills-icons{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .skills-icons div{
+        margin: 50px 0px 0 0 ;
+
+    }
+
+    .project-cont{
+        background-color: rgb(7, 7, 7);
+        height: 100%;
+
+    }
+
+    .project-cont div{
+        margin: 30px 0px;
+    }
+
+    .title-skills{
+        font-size: 70px;
+    }
+
+    .des-skills{
+        font-size: 20px;
+    }
+
+    .me-des{
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+
+    }
+
+    .me a{
+        text-align: center;
+        background-color:#ff70a9 ;
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+
+    }
+
+    .img-pro{
+        width: 100vw;
+    }
+
+}
+
+@media (max-width:375px){
+
+    .cont-start{
+        width: 100vw;
+        height: 150vh;
+    }
+    .me-title p{
+        text-align: center;
+        font-size: 30px;
+        margin: 0 auto;
+    }
+
+    .title-skills{
+        font-size: 50px;
+        padding: 20px 0;
+        padding: 20px 10px;
+    }
+
+    .des-skills{
+        font-size: 20px;
+    }
+
+    .skills-icons{
+        margin: 0 0 40px 0;
+    }
+
+    .skills-icons i{
+        font-size: 180px;
+
+    }
+
+    .skills-icons img{
+        width: 200px;
+    }
+
+    .me-des{
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+
+    }
+
+    .me a{
+        text-align: center;
+        background-color:#ff70a9 ;
+        font-size: 8px;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes hola{
+    0%{
+        font-family: 'Manrope', sans-serif;
+    }
+
+    30%{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    50%{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    70%{
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    100%{
+        font-family: 'Manrope', sans-serif;
+    }
+}
